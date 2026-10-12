@@ -1,0 +1,62 @@
+/* Package Card Styles */
+.package-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.package-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.package-card .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .package-card .card-img-top {
+        height: 180px !important;
+    }
+
+    .package-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .package-card h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .package-card .card-img-top {
+        height: 200px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .package-card .card-img-top {
+        height: 200px !important;
+    }
+}
+
+/* Button hover effect */
+.package-card .btn-primary {
+    transition: all 0.3s ease;
+}
+
+.package-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Badge hover effect */
+.package-card .badge {
+    transition: all 0.3s ease;
+}
+
+.package-card:hover .badge {
+    transform: scale(1.1);
+}
